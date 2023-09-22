@@ -2,20 +2,6 @@
 
 Linux-Auth is a simple C program designed to authenticate users on Linux by checking their credentials against the shadow file. It provides a straightforward and portable solution for user authentication in C.
 
-## Usage
-
-To compile the program, use the following command:
-
-```bash
-gcc main.c -o auth -lcrypt
-```
-
-To run the program, you must have root or sudo privileges since it needs access to the shadow file, which contains user passwords. Use the following command:
-
-```bash
-sudo ./auth
-```
-
 ## Motivation
 
 The motivation behind this project was to create a lightweight and easily portable tool for authenticating users in a Linux environment. The program utilizes the system's shadow file to validate usernames and passwords.
@@ -40,6 +26,20 @@ freely, subject to the following restrictions:
 
 By using this software, you acknowledge that you have read and understood
 these terms and agree to abide by them.
+```
+
+## Usage
+
+To compile the program, use the following command:
+
+```bash
+gcc main.c -o auth -lcrypt
+```
+
+To run the program, you must have root or sudo privileges since it needs access to the shadow file, which contains user passwords. Use the following command:
+
+```bash
+sudo ./auth
 ```
 
 ## Contributing
